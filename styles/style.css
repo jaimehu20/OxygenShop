@@ -1,47 +1,42 @@
-/*
-Error: File to import not found or unreadable: general.
-        on line 1 of style.scss
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
-1: @import 'general';
-2: @import 'body';
+body {
+  min-width: 320px; }
 
-Backtrace:
-style.scss:1
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-C:/Ruby32-x64/bin/sass:32:in `load'
-C:/Ruby32-x64/bin/sass:32:in `<main>'
+header {
+  font-size: 16px;
+  width: 100%;
+  margin: 0;
+  padding: 0.75em; }
+
+.header__title {
+  box-shadow: 0px 3px 6px 0px #0000004A; }
+
+.header__title p {
+  display: inline-block;
+  font-size: 2rem;
+  font-family: 'Raleway';
+  margin-left: 0.25em;
+  color: #08A6E4;
+  font-weight: 300; }
+
+.header__title svg {
+  width: 20px;
+  margin-left: 6.4em; }
+
+/*@media screen and (max-width: 1000px) and (min-width: 320px) {
+    header {
+        background: red;
+    }
+    .header__title svg {
+        display: inline-block;
+        
+    }
+
+}
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: general.\A         on line 1 of style.scss\A \A 1: @import 'general';\A 2: @import 'body';"; }
+
+/*# sourceMappingURL=style.css.map */
