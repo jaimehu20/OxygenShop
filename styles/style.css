@@ -38,5 +38,30 @@ header {
 
 }
 */
+.opening__section {
+  font-family: 'Raleway';
+  text-align: center;
+  font-weight: 400;
+  font-size: 35px;
+  margin-top: 2.8em; }
+
+.opening__section--text {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  padding-top: 1.16em;
+  padding-bottom: 1.16em; }
+
+.opening__section #btn {
+  background: #08A6E4;
+  color: white;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  padding-top: 1.75em;
+  padding-bottom: 1.75em;
+  padding-left: 1.16em;
+  padding-right: 1.16em;
+  border: solid 1px #08A6E4;
+  border-radius: 30px;
+  box-shadow: 5px 10px 14px 0px #07ACE64A; }
 
 /*# sourceMappingURL=style.css.map */
