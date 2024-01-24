@@ -1,0 +1,35 @@
+.second__section--title {
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 30px;
+    padding-top: 0.16em;
+}
+
+.box {
+    font-family: 'Raleway';
+    text-align: center;
+    padding-top: 2em;
+}
+
+.box__ellipse {
+    position: relative;
+}
+
+.box__icon {
+    position: absolute;
+    left: 50%;
+}
+
+.box__title {
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 0.29em;
+    padding-top: 0.5em;
+}
+
+.box__subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    color: #A5A5A5;
+    margin-top: 0.88em;
+}

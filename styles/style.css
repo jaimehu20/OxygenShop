@@ -6,16 +6,14 @@
 body {
   min-width: 320px; }
 
-header {
+.navBar {
   font-size: 16px;
   width: 100%;
   margin: 0;
-  padding: 0.75em; }
-
-.header__title {
+  padding: 0.75em;
   box-shadow: 0px 3px 6px 0px #0000004A; }
 
-.header__title p {
+.nav__title {
   display: inline-block;
   font-size: 2rem;
   font-family: 'Raleway';
@@ -23,8 +21,8 @@ header {
   color: #08A6E4;
   font-weight: 300; }
 
-.header__title svg {
-  width: 20px;
+.nav__icon {
+  width: 1.25em;
   margin-left: 6.4em; }
 
 /*@media screen and (max-width: 1000px) and (min-width: 320px) {
@@ -38,7 +36,7 @@ header {
 
 }
 */
-.opening__section {
+.opening-section {
   font-family: 'Raleway';
   text-align: center;
   font-weight: 400;
@@ -51,7 +49,7 @@ header {
   padding-top: 1.16em;
   padding-bottom: 1.16em; }
 
-.opening__section #btn {
+.opening__section--button {
   background: #08A6E4;
   color: white;
   font-family: 'Open Sans';
@@ -62,10 +60,42 @@ header {
   padding-right: 1.16em;
   border: solid 1px #08A6E4;
   border-radius: 30px;
-  box-shadow: 5px 10px 14px 0px #07ACE64A; }
+  box-shadow: 5px 10px 14px 0px #07ACE64A;
+  padding-left: 100px;
+  padding-right: 100px; }
 
 #laptop {
   width: 100%;
   padding-top: 2.3em; }
+
+.second__section--title {
+  text-align: center;
+  font-family: 'Raleway';
+  font-size: 30px;
+  padding-top: 0.16em; }
+
+.box {
+  font-family: 'Raleway';
+  text-align: center;
+  padding-top: 2em; }
+
+.box__ellipse {
+  position: relative; }
+
+.box__icon {
+  position: absolute;
+  left: 50%; }
+
+.box__title {
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.29em;
+  padding-top: 0.5em; }
+
+.box__subtitle {
+  font-weight: 400;
+  font-size: 17px;
+  color: #A5A5A5;
+  margin-top: 0.88em; }
 
 /*# sourceMappingURL=style.css.map */
