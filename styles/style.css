@@ -64,4 +64,8 @@ header {
   border-radius: 30px;
   box-shadow: 5px 10px 14px 0px #07ACE64A; }
 
+#laptop {
+  width: 100%;
+  padding-top: 2.3em; }
+
 /*# sourceMappingURL=style.css.map */
