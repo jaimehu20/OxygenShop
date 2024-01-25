@@ -1,0 +1,81 @@
+.contactSection {
+    margin-left: 35px;
+}
+
+.contactSection__questions {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.contactSection__subTitle {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.contactSection__userInfo {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.contactSection__userInfo__data {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    color: #A5A5A5;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.contactSection__userInfo__data__icon {
+    position: relative;
+    top: 9px;
+}
+
+.contact__text {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 3.28px;
+    color: #08A6E4;
+}
+
+.contact__text__input {
+    border: 1px solid #95989A;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 90%;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.contactSection__consent__text {
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 12px;
+    color: #707070;
+}
+
+.contactSection__consent__checkbox {
+    margin-bottom: 113px;
+    margin-right: 8px;
+}
+
+.contactSection__consent__button {
+    background: #08A6E4;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    margin-left: 120px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-left: 80px;
+    border: solid 1px #08A6E4;
+    border-radius: 30px;
+    box-shadow: 5px 10px 14px 0px #07ACE64A;
+}
