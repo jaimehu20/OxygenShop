@@ -20,6 +20,7 @@
 }
 
 .contactSection__userInfo__data {
+    display: inline-block;
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 16px;
@@ -29,8 +30,8 @@
 }
 
 .contactSection__userInfo__data__icon {
-    position: relative;
-    top: 9px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .contact__text {
@@ -60,7 +61,7 @@
 }
 
 .contactSection__consent__checkbox {
-    margin-bottom: 113px;
+    vertical-align: top;
     margin-right: 8px;
 }
 

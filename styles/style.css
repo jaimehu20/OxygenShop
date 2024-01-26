@@ -85,6 +85,13 @@ body {
   position: absolute;
   left: 50%; }
 
+.box__icon--2 {
+  top: 61em;
+  left: 11em; }
+
+.box__icon--3 {
+  top: 72.5em; }
+
 .box__title {
   font-weight: 800;
   font-size: 20px;
@@ -112,9 +119,29 @@ body {
   border-radius: 5px;
   background: white; }
 
-.third__section--object {
-  margin-top: 10px;
-  margin-bottom: 30px; }
+.third-section__container--box {
+  padding-bottom: 30px; }
+
+.third-section__container--box--2 {
+  padding-top: 10px;
+  padding-bottom: 30px; }
+
+.third__section__container--ellipse {
+  position: absolute;
+  margin-left: 90px; }
+
+.third__section__container--img {
+  position: relative;
+  margin-top: 40px; }
+
+.third__section__container--ellipse--2 {
+  position: absolute;
+  margin-left: 30px; }
+
+.third__section__container--img--2 {
+  position: relative;
+  margin-top: 0;
+  margin-left: 30px; }
 
 .third__section__objectTitle {
   font-family: 'Raleway';
@@ -269,6 +296,7 @@ body {
   margin-bottom: 40px; }
 
 .contactSection__userInfo__data {
+  display: inline-block;
   font-family: 'Open Sans';
   font-weight: 600;
   font-size: 16px;
@@ -277,8 +305,8 @@ body {
   width: 80%; }
 
 .contactSection__userInfo__data__icon {
-  position: relative;
-  top: 9px; }
+  display: inline-block;
+  vertical-align: middle; }
 
 .contact__text {
   font-family: 'Open Sans';
@@ -304,7 +332,7 @@ body {
   color: #707070; }
 
 .contactSection__consent__checkbox {
-  margin-bottom: 113px;
+  vertical-align: top;
   margin-right: 8px; }
 
 .contactSection__consent__button {
