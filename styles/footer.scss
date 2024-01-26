@@ -1,20 +1,20 @@
 .footerBar {
-    font-size: 16px;
+    font-size: 1em;
     width: 100%;
     padding: 0.75em;
-    margin-top: 35px;
+    margin-top: 2.18em;
     box-shadow: 0px -5px 40px 0px #00000033;
 }
 
 .footerBar__text {
     display: inline-block;
     width: 60%;
-    margin-bottom: 5px;
+    margin-bottom: 0.3em;
 }
 
 .footerBar__text__title {
     display: inline-block;
-    font-size: 26px;
+    font-size: 1.62em;
     font-family: 'Raleway';
     margin-left: 0.25em;
     color: #08A6E4;
@@ -24,17 +24,17 @@
 .footerBar__text__copyright {
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: 11px;
+    font-size: 0.7em;
     color: #A5A5A5;
-    margin-left: 8px;
+    margin-left: 0.8em;
 }
 
 .footerBar__socialMedia {
     width: 30%;
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 1.87em;
 }
 
 .footerBar__socialMedia__facebook {
-    margin-left: 15px;
+    margin-left: 0.93em;
 }

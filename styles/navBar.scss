@@ -1,11 +1,11 @@
 .navBar {
-    font-size: 16px;
+    font-size: 1em;
     width: 100%;
     padding: 0.75em;
     box-shadow: 0px 3px 6px 0px #0000004A;
 }
 
-.nav__title {
+.navBar__title {
     display: inline-block;
     font-size: 2rem;
     font-family: 'Raleway';
@@ -14,7 +14,7 @@
     font-weight: 300;
 }
 
-.nav__icon {
+.navBar__icon {
     width: 1.25em;
     margin-left: 6.4em;
 }
