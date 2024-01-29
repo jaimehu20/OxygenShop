@@ -8,9 +8,11 @@
 
 .fourthSection__box {
     width: 80%;
+    max-width: 15.25em;
+    min-width: 18.75em;
+    margin: auto;
     border: 1px solid #FB3B64;
     border-radius: 1em;
-    margin-left: 2.5em;
     margin-top: 1.25em;
     margin-bottom: 3.12em;
     text-align: center;
@@ -64,11 +66,11 @@
     line-height: 2.5em;
     text-align: left;
     padding-top: 1.87em;
-    padding-left: 6em;
+    padding-left: 5em;
 }
 
 .fourthSection__features--2 {
-    padding-left: 4em;
+    padding-left: 3em;
 }
 
 .offer {
@@ -97,4 +99,8 @@
 .fourthSection__box__button--3 {
     background: #55DFB4;
     border: 1px solid #55DFB4;
+}
+
+.fourthSectionDesktop {
+    display: none;
 }

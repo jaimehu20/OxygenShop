@@ -1,42 +1,45 @@
-.second__section--title {
+.secondSection__title {
+    width: 70%;
+    margin: auto;
     text-align: center;
     font-family: 'Raleway';
     font-size: 1.8em;
     padding-top: 0.16em;
+
 }
 
-.second_section--box {
+.secondSection__box {
     font-family: 'Raleway';
     text-align: center;
     padding-top: 2em;
 }
 
-.box__ellipse {
+.secondSection__box__ellipse {
     position: relative;
 }
 
-.box__icon {
+.secondSection__box__icon {
     position: absolute;
     left: 50%;
 }
 
-.box__icon--2 {
+.secondSection__box__icon__2 {
     margin-top: 0.65em;
     left: 46%;
 }
 
-.box__icon--3 {
+.secondSection__box__icon__3 {
     margin-top: 0.40em;
 }
 
-.box__title {
+.secondSection__box__title {
     font-weight: 800;
     font-size: 1.25em;
     letter-spacing: 0.29em;
     padding-top: 0.5em;
 }
 
-.box__subtitle {
+.secondSection__box__subtitle {
     font-weight: 400;
     font-size: 1em;
     color: #A5A5A5;

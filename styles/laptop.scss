@@ -1,4 +1,12 @@
-#laptop {
+.laptop {
+    text-align: center;
+}
+
+.laptopDesktop {
+    display: none;
+}
+
+.laptopMobile {
     width: 100%;
     padding-top: 2.3em;
 }

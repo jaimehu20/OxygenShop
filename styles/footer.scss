@@ -30,9 +30,10 @@
 }
 
 .footerBar__socialMedia {
-    width: 30%;
     display: inline-block;
-    margin-left: 1.87em;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
 }
 
 .footerBar__socialMedia__facebook {
