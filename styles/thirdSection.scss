@@ -16,7 +16,7 @@
     text-align: center;
     margin-top: 1.87em;
     border: 1px solid #E8E9ED;
-    border-radius: 5px;
+    border-radius: 0.3em;
     background: white;
 }
 
@@ -33,6 +33,7 @@
     display: none;
     position: absolute;
     width: 45%;
+    max-width: 30em;
     margin-top: 3.13em;
     margin-left: 1.9em;
     padding-bottom: 5.63em;
@@ -71,7 +72,7 @@
 .separator {
     display: none;
     background: #FB3B64;
-    padding: 1px;
+    padding: 0.06em;
     border-style: none;
     width: 76%;
 }
@@ -84,7 +85,7 @@
     text-align: center;
     margin-top: 1.87em;
     border: 1px solid #E8E9ED;
-    border-radius: 5px;
+    border-radius: 0.3em;
     background: white;
 }
 
@@ -95,7 +96,6 @@
 
 .thirdSection__container__ellipse--mod {
     position: absolute;
-    margin-left: 30px;
 }
 
 .thirdSection__container__img__iphone {
@@ -111,13 +111,13 @@
     text-align: center;
     margin-top: 1.87em;
     border: 1px solid #E8E9ED;
-    border-radius: 5px;
+    border-radius: 0.3em;
     background: white;
     display: none;
 }
 
 .thirdSection__container__box--mod {
-    margin-top: 30px;
+    margin-top: 1.87em;
 }
 
 .thirdSection__container__ellipse3 {
@@ -154,7 +154,7 @@
     text-align: center;
     margin-top: 1.87em;
     border: 1px solid #E8E9ED;
-    border-radius: 5px;
+    border-radius: 0.3em;
     background: white;
 }
 
@@ -176,7 +176,7 @@
     margin-top: 1.87em;
     margin-bottom: 2.5em;
     border: 1px solid #E8E9ED;
-    border-radius: 5px;
+    border-radius: 0.3em;
     background: white;
     display: none;
 }
@@ -215,14 +215,14 @@
 .leftBox {
     background: #fff;
     width: 60%;
-    border-radius: 5px;
+    border-radius: 0.3em;
     border: 1px solid #E8E9ED;
 }
 
 .rightBox {
     background: #55DFB4;
     width: 34%;
-    border-radius: 5px;
+    border-radius: 0.3em;
     border: 1px solid #E8E9ED;
 }
 
@@ -231,7 +231,7 @@
     background: #55DFB4;
     padding: 1px;
     border-style: none;
-    margin-bottom: 50px;
+    margin-bottom: 3.12em;
     margin-left: 1.4em;
 }
 

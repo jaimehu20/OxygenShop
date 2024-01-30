@@ -35,7 +35,7 @@ body {
   padding-right: 5em;
   font-family: 'Open Sans';
   font-weight: 700;
-  font-size: 11px;
+  font-size: 0.68em;
   letter-spacing: 0.40em; }
 
 .openingSection {
@@ -132,7 +132,7 @@ body {
   text-align: center;
   margin-top: 1.87em;
   border: 1px solid #E8E9ED;
-  border-radius: 5px;
+  border-radius: 0.3em;
   background: white; }
 
 .thirdSection__container__box {
@@ -146,6 +146,7 @@ body {
   display: none;
   position: absolute;
   width: 45%;
+  max-width: 30em;
   margin-top: 3.13em;
   margin-left: 1.9em;
   padding-bottom: 5.63em; }
@@ -179,7 +180,7 @@ body {
 .separator {
   display: none;
   background: #FB3B64;
-  padding: 1px;
+  padding: 0.06em;
   border-style: none;
   width: 76%; }
 
@@ -191,7 +192,7 @@ body {
   text-align: center;
   margin-top: 1.87em;
   border: 1px solid #E8E9ED;
-  border-radius: 5px;
+  border-radius: 0.3em;
   background: white; }
 
 .thirdSection__container__box--mod {
@@ -199,8 +200,7 @@ body {
   padding-bottom: 1.87em; }
 
 .thirdSection__container__ellipse--mod {
-  position: absolute;
-  margin-left: 30px; }
+  position: absolute; }
 
 .thirdSection__container__img__iphone {
   position: relative;
@@ -213,12 +213,12 @@ body {
   text-align: center;
   margin-top: 1.87em;
   border: 1px solid #E8E9ED;
-  border-radius: 5px;
+  border-radius: 0.3em;
   background: white;
   display: none; }
 
 .thirdSection__container__box--mod {
-  margin-top: 30px; }
+  margin-top: 1.87em; }
 
 .thirdSection__container__ellipse3 {
   position: absolute;
@@ -249,7 +249,7 @@ body {
   text-align: center;
   margin-top: 1.87em;
   border: 1px solid #E8E9ED;
-  border-radius: 5px;
+  border-radius: 0.3em;
   background: white; }
 
 .thirdSection__objectTitle--last {
@@ -269,7 +269,7 @@ body {
   margin-top: 1.87em;
   margin-bottom: 2.5em;
   border: 1px solid #E8E9ED;
-  border-radius: 5px;
+  border-radius: 0.3em;
   background: white;
   display: none; }
 
@@ -301,13 +301,13 @@ body {
 .leftBox {
   background: #fff;
   width: 60%;
-  border-radius: 5px;
+  border-radius: 0.3em;
   border: 1px solid #E8E9ED; }
 
 .rightBox {
   background: #55DFB4;
   width: 34%;
-  border-radius: 5px;
+  border-radius: 0.3em;
   border: 1px solid #E8E9ED; }
 
 .separator2 {
@@ -315,7 +315,7 @@ body {
   background: #55DFB4;
   padding: 1px;
   border-style: none;
-  margin-bottom: 50px;
+  margin-bottom: 3.12em;
   margin-left: 1.4em; }
 
 .thirdSection__trumpet {
@@ -395,7 +395,7 @@ body {
   color: white;
   background: #EB476E;
   border: 1px solid #EB476E;
-  border-radius: 23px;
+  border-radius: 1.43em;
   padding-left: 3.12em;
   padding-right: 3.12em;
   padding-bottom: 0.93em;
@@ -523,8 +523,8 @@ body {
 
 .footerBar__socialMedia {
   float: right;
-  margin-right: 30px;
-  margin-top: 10px; }
+  margin-right: 1.87em;
+  margin-top: 0.62em; }
 
 .footerBar__socialMedia__facebook {
   margin-left: 0.93em; }
@@ -579,7 +579,7 @@ body {
     padding-bottom: 4em; }
 
   .secondSection__title {
-    font-size: 36px;
+    font-size: 2.25em;
     padding-top: 0.8em;
     width: 100%; }
 
@@ -700,7 +700,7 @@ body {
     transform: scale(1.2); }
 
   .fourthSection__box__pricing {
-    margin-top: 30px;
+    margin-top: 1.87em;
     position: static; }
 
   .fourthSection__features {
