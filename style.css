@@ -70,37 +70,30 @@ body {
   font-family: 'Raleway';
   font-size: 1.8em;
   padding-top: 0.16em; }
-
-.secondSection__box {
+.secondSection__display__box {
   font-family: 'Raleway';
   text-align: center;
   padding-top: 2em; }
-
-.secondSection__box__ellipse {
-  position: relative; }
-
-.secondSection__box__icon {
-  position: absolute;
-  left: 50%; }
-
-.secondSection__box__icon__2 {
-  margin-top: 0.65em;
-  left: 46%; }
-
-.secondSection__box__icon__3 {
-  margin-top: 0.40em; }
-
-.secondSection__box__title {
-  font-weight: 800;
-  font-size: 1.25em;
-  letter-spacing: 0.29em;
-  padding-top: 0.5em; }
-
-.secondSection__box__subtitle {
-  font-weight: 400;
-  font-size: 1em;
-  color: #A5A5A5;
-  margin-top: 0.88em; }
+  .secondSection__display__box__ellipse {
+    position: relative; }
+  .secondSection__display__box__icon {
+    position: absolute;
+    left: 50%; }
+  .secondSection__display__box__icon2 {
+    margin-top: 0.65em;
+    left: 46%; }
+  .secondSection__display__box__icon3 {
+    margin-top: 0.40em; }
+  .secondSection__display__box__title {
+    font-weight: 800;
+    font-size: 1.25em;
+    letter-spacing: 0.29em;
+    padding-top: 0.5em; }
+  .secondSection__display__box__subtitle {
+    font-weight: 400;
+    font-size: 1em;
+    color: #A5A5A5;
+    margin-top: 0.88em; }
 
 .thirdSection {
   background: #F7F7F7;
