@@ -3,31 +3,34 @@
     padding: 0.75em;
     box-shadow: 0px 3px 6px 0px #0000004A;
     margin: auto;
+    &__title {
+        display: inline-block;
+        font-size: 2rem;
+        font-family: 'Raleway';
+        color: #08A6E4;
+        font-weight: 300;
+    }
+    &__icon {
+        float: right;
+        width: 1.25em;
+        padding-top: 0.62em;
+    }
+    &__desktopMenu {
+        display: none;
+        &__options {
+            display: none;
+            padding-right: 5em;
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 0.68em;
+            letter-spacing: 0.40em;
+        }
+    }
 }
 
-.navBar__title {
-    display: inline-block;
-    font-size: 2rem;
-    font-family: 'Raleway';
-    color: #08A6E4;
-    font-weight: 300;
-}
+    
 
-.navBar__icon {
-    float: right;
-    width: 1.25em;
-    padding-top: 0.62em;
-}
 
-.navBar__desktopMenu {
-    display: none;
-}
 
-.navBar__desktopMenu__options {
-    display: none;
-    padding-right: 5em;
-    font-family: 'Open Sans';
-    font-weight: 700;
-    font-size: 0.68em;
-    letter-spacing: 0.40em;
-}
+
+
