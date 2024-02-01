@@ -18,6 +18,9 @@
                 padding-bottom: 1.87em;
                 margin-left: 2.5em;
             }
+            &--desktop {
+                margin-top: 1.87em;
+            }
             &__ellipse1 {
                 position: absolute;
                 margin-left: 5.62em;
@@ -34,6 +37,12 @@
             &__ellipse3 {
                 position: absolute;
             }
+            &__ellipse4 {
+                position: absolute;
+                width: 22%;
+                height: auto;
+                max-width: 14em;
+            }
             &__pc1 {
                 position: relative;
                 margin-top: 2.5em;
@@ -48,6 +57,11 @@
                 position: relative;
                 margin-left: 1.87em;
             }
+            &__iphone2 {
+                position: relative;
+                width: 70%;
+                top: 7%;
+            }
         }
         &__object {
             width: 100%;
@@ -59,6 +73,12 @@
                 margin-left: 0.7em;
                 &--last {
                     margin-top: 1em;
+                }
+                &--mod {
+                    width: 66%;
+                }
+                &--mod2 {
+                    width: 72%;
                 }
             }
             &__text {
@@ -75,6 +95,9 @@
                     margin-left: 1.25em;
                     margin-bottom: 1.87em;
                 }
+                &--mod2{
+                    width: 77%;
+                }
             }
             &__separator {
                 display: none;
@@ -82,6 +105,22 @@
                 padding: 0.06em;
                 border-style: none;
                 width: 76%;
+                &--blue {
+                    background: #08A6E4;
+                    width: 78%;
+                }
+            }
+            &__separator2 {
+                width: 62%;
+                background: #55DFB4;
+                padding: 1px;
+                border-style: none;
+                margin-bottom: 3.12em;
+                margin-left: 1.4em;
+            }
+            &--mod {
+                margin-top: 3.4em;
+                width: 47%;
             }
         }
     }
@@ -123,6 +162,23 @@
         border-radius: 0.3em;
         background: white;
         display: none;
+        &__leftBox {
+            background: #fff;
+            width: 60%;
+            border-radius: 0.3em;
+            border: 1px solid #E8E9ED;
+        }
+        &__rightBox {
+            background: #55DFB4;
+            width: 34%;
+            border-radius: 0.3em;
+            border: 1px solid #E8E9ED;
+            &__trumpet {
+                display: none;
+                width: 90%;
+                margin-top: 5em;
+            }
+        }
     }
     &__containerGreen {
         width: 80%;
@@ -137,110 +193,4 @@
             right: 0.93em;
         }
     }
-}
-
-/* FIRST BOX FROM THIRD SECTION */
-
-
-
-
-
-
-/* SECOND BOX FROM THIRD SECTION */
-/* mobile */    
-
-
-
-
-
-
-/* desktop */
-
-
-.thirdSection__container__box--mod {
-    margin-top: 1.87em;
-}
-
-.thirdSection__container__ellipse3 {
-    position: absolute;
-    width: 22%;
-    height: auto;
-    max-width: 14em;
-}
-
-.thirdSection__containerDesktop__img__iphone2 {
-    position: relative;
-    width: 70%;
-    top: 7%;
-}
-
-.thirdSection__object--mod {
-    margin-top: 3.4em;
-}
-
-.thirdSection__objectTitle--mod {
-    width: 66%;
-}
-
-.separator--blue {
-    background: #08A6E4;
-    width: 78%;
-}
-
-/* THIRD BOX FROM THIRD SECTION */
-/* mobile */
-
-
-
-
-
-/* desktop */
-
-
-.thirdSection__objectTitle--mod2 {
-    width: 72%;
-}
-
-.thirdSection__objectText--mod2{
-    width: 77%;
-}
-
-
-
-
-
-.thirdSection__trumpet {
-    display: none;
-}
-
-.thirdSection__green {
-    background: red;
-}
-
-.leftBox {
-    background: #fff;
-    width: 60%;
-    border-radius: 0.3em;
-    border: 1px solid #E8E9ED;
-}
-
-.rightBox {
-    background: #55DFB4;
-    width: 34%;
-    border-radius: 0.3em;
-    border: 1px solid #E8E9ED;
-}
-
-.separator2 {
-    width: 62%;
-    background: #55DFB4;
-    padding: 1px;
-    border-style: none;
-    margin-bottom: 3.12em;
-    margin-left: 1.4em;
-}
-
-.thirdSection__trumpet {
-    width: 90%;
-    margin-top: 5em;
 }
