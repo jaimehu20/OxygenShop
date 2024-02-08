@@ -7,21 +7,19 @@
         margin-top: 1.66em;
     }
     &__content {
+        padding: 2.87em;
         &__box {
-            width: 80%;
-            max-width: 15.25em;
-            min-width: 18.75em;
-            margin: auto;
             border: 1px solid #FB3B64;
             border-radius: 1em;
-            margin-top: 1.25em;
-            margin-bottom: 3.12em;
+            margin: 1.25em auto 3.12em auto;
             text-align: center;
+            max-width: 24em;
             &--blue {
                 border: 1px solid #07ACE6;
             }
             &--green {
                 border: 1px solid #55DFB4;
+                max-width: 23em;
             }
             &__pricing {
                 display: inline-block;
@@ -65,7 +63,7 @@
                 padding-top: 1.87em;
                 padding-left: 5em;
                 &--2 {
-                    padding-left: 3em;
+                    padding-left: 2em;
                 }
                 &__list {
                     &__item {
@@ -90,121 +88,16 @@
                 &--2 {
                     background: #07ACE6;
                     border: 1px solid #07ACE6;
+                    transform: translateY(50%);
                 }
                 &--3 {
                     background: #55DFB4;
                     border: 1px solid #55DFB4;
+                    transform: translateY(50%);
                 }
             }
         }
     }
 }
-.fourthSectionDesktop {
-    display: none;
-    &__title {
-        font-family: 'Raleway';
-        font-weight: 400;
-        font-size: 2.25em;
-        text-align: center;
-        margin-top: 1.66em;
-    }
-    &__content {
-        &__box {
-            width: 80%;
-            max-width: 15.25em;
-            min-width: 18.75em;
-            margin: auto;
-            border: 1px solid #FB3B64;
-            border-radius: 1em;
-            margin-top: 1.25em;
-            margin-bottom: 3.12em;
-            text-align: center;
-            &--blue {
-                border: 1px solid #07ACE6;
-                &:hover {
-                    border: 1px solid #07ACE6;
-                    box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.29);
-                    transition: all 200ms ease-in 200ms;
-                    transform: scale(1.2);
-                    }
-            }
-            &--green {
-                border: 1px solid #55DFB4;
-            }
-            &__pricing {
-                display: inline-block;
-                position: relative;
-                bottom: 3em;
-                left: 10%;
-                &--2 {
-                    left: 5%;
-                    bottom: 1.6em;
-                }
-                &__plan {
-                    font-family: 'Raleway';
-                    font-weight: 700;
-                    font-size: 1.25em;
-                }
-                &__price {
-                    font-family: 'Open Sans';
-                    font-weight: 300;
-                    font-size: 2.87em;
-                    color: #FB3B64;
-                    &--2 {
-                        color: #07ACE6;
-                    }
-                    &--3 {
-                        color: #55DFB4;
-                    }
-                }
-                &__offer {
-                    font-family: 'Raleway';
-                    font-size: 0.75em;
-                    font-weight: 700;
-                }
-            }
-            &__features {
-                display: inline-block;
-                font-family: 'Open Sans';
-                font-weight: 400;
-                font-size: 0.87em;
-                line-height: 2.5em;
-                text-align: left;
-                padding-top: 1.87em;
-                padding-left: 5em;
-                &--2 {
-                    padding-left: 3em;
-                }
-                &__list {
-                    &__item {
-                        display: inline-block;
-                        padding-left: 1em;
-                    }
-                    &__item2 {
-                        display: inline-block;
-                    }
-                }
-            }
-            &__button {
-                color: white;
-                background: #EB476E;
-                border: 1px solid #EB476E;
-                border-radius: 1.43em;
-                padding-left: 3.12em;
-                padding-right: 3.12em;
-                padding-bottom: 0.93em;
-                padding-top: 0.93em;
-                transform: translateY(50%);
-                &--2 {
-                    background: #07ACE6;
-                    border: 1px solid #07ACE6;
-                }
-                &--3 {
-                    background: #55DFB4;
-                    border: 1px solid #55DFB4;
-                }
-            }
-        }
-    }
-}
+
 

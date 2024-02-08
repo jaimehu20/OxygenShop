@@ -1,8 +1,6 @@
 .contactSection {
     margin-left: 2.2em;
     &__questions {
-        width: 84%;
-        margin-right: 2em;
         &__text {
             font-family: 'Raleway';
             font-weight: 400;
@@ -52,6 +50,7 @@
             }
         }
         &__text {
+            max-width: 20em;
             &__checkbox {
                 vertical-align: top;
                 margin-right: 0.5em;

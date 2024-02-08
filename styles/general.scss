@@ -2,8 +2,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: all 200ms ease-out;
+    scroll-behavior: smooth;
 }
 
 body {
     min-width: 320px;
+}
+
+a {
+    text-decoration: none;
+    color: #A5A5A5;
 }

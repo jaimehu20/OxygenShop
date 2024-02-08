@@ -1,11 +1,11 @@
 .secondSection {
+    text-align: center;
     &__title {
-        width: 70%;
-        margin: auto;
-        text-align: center;
         font-family: 'Raleway';
         font-size: 1.8em;
-        padding-top: 0.16em;
+        font-weight: 300;
+        padding-left: 2.16em;
+        padding-right: 2.16em;
     }
     &__display {
         &__box {
@@ -27,12 +27,14 @@
                 margin-top: 0.40em;
             }
             &__title {
+                font-family: 'Raleway';
                 font-weight: 800;
                 font-size: 1.25em;
                 letter-spacing: 0.29em;
                 padding-top: 0.5em;
             }
             &__subtitle {
+                font-family: 'Raleway';
                 font-weight: 400;
                 font-size: 1em;
                 color: #A5A5A5;

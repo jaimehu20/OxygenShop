@@ -7,10 +7,12 @@
     &__text {
         font-family: 'Open Sans';
         font-size: 0.5em;
-        padding-top: 1.16em;
-        padding-bottom: 1.16em;
-        margin: auto;
-        width: 69%;
+        padding: 1.16em;
+    }
+    &__title {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 1em;
     }
     &__button {
         background: #08A6E4;
@@ -26,12 +28,11 @@
         padding-right: 6.25em;
     }
     &__laptopDesktop {
-        display: none;
-    }
-    &__laptopMobile {
+        display: block;
         width: 100%;
-        max-width: 412px;
-        padding-top: 2.3em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        transform: scale(1.6);
     }
 }
 
