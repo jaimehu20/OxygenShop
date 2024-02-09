@@ -39,6 +39,9 @@
             font-size: 0.7em;
             letter-spacing: 0.20em;
             color: #08A6E4;
+            &__text {
+                display: block;
+            }
             &__input {
                 border: 1px solid #95989A;
                 border-top: 0;

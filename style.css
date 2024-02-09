@@ -376,6 +376,8 @@ a {
       font-size: 0.7em;
       letter-spacing: 0.20em;
       color: #08A6E4; }
+      .contactSection__consenting__contactData__text {
+        display: block; }
       .contactSection__consenting__contactData__input {
         border: 1px solid #95989A;
         border-top: 0;
@@ -648,8 +650,6 @@ a {
     .contactSection__consenting {
       width: 40%;
       max-width: 31em; }
-      .contactSection__consenting__contactData__text {
-        display: block; }
     .contactSection__text__button {
       cursor: pointer; } }
 
