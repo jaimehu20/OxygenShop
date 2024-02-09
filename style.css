@@ -647,8 +647,10 @@ a {
       padding-right: 5em; }
     .contactSection__consenting {
       width: 40%;
-      max-width: 31em;
-      .contactSection__consenting__text__button {
-        cursor: pointer; } }
+      max-width: 31em; }
+    .contactSection__contactData__text {
+      display: block; }
+    .contactSection__text__button {
+      cursor: pointer; } }
 
 /*# sourceMappingURL=style.css.map */
