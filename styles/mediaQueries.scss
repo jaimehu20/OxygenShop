@@ -265,6 +265,11 @@
     &__consenting {
         width: 40%;
         max-width: 31em;
+        &__contactData {
+            &__text {
+                display : block;
+            }
+        }
         &__text {
             &__button {
                 cursor: pointer;
