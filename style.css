@@ -27,7 +27,16 @@ a {
     top: 0.6em;
     right: 1.62em;
     width: 1.25em;
-    padding-top: 0.62em; }
+    padding-top: 0.62em;
+    cursor: pointer; }
+  .navBar__iconClose {
+    display: none;
+    position: absolute;
+    top: 0.6em;
+    right: 1.62em;
+    width: 1.25em;
+    padding-top: 0.62em;
+    cursor: pointer; }
   .navBar__menu {
     display: none; }
     .navBar__menu__options {
@@ -452,6 +461,8 @@ a {
     justify-content: space-between;
     align-items: center; }
     .navBar__icon {
+      display: none; }
+    .navBar__iconClose {
       display: none; }
     .navBar__title {
       padding-left: 3em; }

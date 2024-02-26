@@ -15,6 +15,16 @@
         right: 1.62em;
         width: 1.25em;
         padding-top: 0.62em;
+        cursor: pointer;
+    }
+    &__iconClose {
+        display: none;
+        position: absolute;
+        top: 0.6em;
+        right: 1.62em;
+        width: 1.25em;
+        padding-top: 0.62em;
+        cursor: pointer;
     }
     &__menu {
         display: none;
