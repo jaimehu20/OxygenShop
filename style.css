@@ -16,6 +16,13 @@ a {
   width: 100%;
   padding: 0.75em;
   box-shadow: 0px 3px 6px 0px #0000004A; }
+  .navBar__scrollBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0.3em;
+    background: red;
+    z-index: 9999; }
   .navBar__title {
     display: inline-block;
     font-size: 2rem;
@@ -378,7 +385,8 @@ a {
       margin-bottom: 0.6em;
       width: 80%; }
   .contactSection__consenting {
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 4em; }
     .contactSection__consenting__contactData {
       font-family: 'Open Sans';
       font-weight: 600;
