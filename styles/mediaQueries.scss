@@ -268,11 +268,17 @@
     &__consenting {
         width: 40%;
         max-width: 31em;
+        &__text {
+            &__returnToTopButton {
+                left: 29em;
+            }
+        }
         }
         &__text {
             &__button {
                 cursor: pointer;
             }
+            
         }
     }
 }

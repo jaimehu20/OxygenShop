@@ -3,6 +3,7 @@ const displayMenu = document.querySelector('#displayMenu');
 const hideMenu = document.querySelector('#hideMenu');
 const mobileMenu = document.querySelector('#mobileMenu');
 const menuOption = document.querySelectorAll('.navBar__menu__options');
+const returnTopButton = document.querySelector('#returnToTop');
 
 displayMenu.addEventListener("click", dropdownMenu);
 
@@ -37,3 +38,12 @@ window.addEventListener("scroll", () => {
     document.querySelector('#scrollBar').style.width = percent + "%";
 
 })
+
+// RETURN TO TOP BUTTON
+returnTopButton.addEventListener("click", returnTop);
+
+function returnTop() {
+    setTimeout(() => {
+        window.scrollTo(0, 0)
+    }, 200)
+}

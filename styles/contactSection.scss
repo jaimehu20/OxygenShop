@@ -81,6 +81,20 @@
                 border-radius: 1.87em;
                 box-shadow: 5px 10px 14px 0px #07ACE64A;
             }
+            &__returnToTopButton {
+                position: relative;
+                top: 4em;
+                left: 17em;
+                background: #08A6E4;
+                color: white;
+                border-radius: 50%;
+                padding-bottom: 2em;
+                padding-top: 2em;
+                font-family: 'Raleway';
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+                cursor: pointer;
+            }
         }
     }
 }

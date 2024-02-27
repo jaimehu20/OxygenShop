@@ -428,6 +428,19 @@ a {
         border: solid 1px #08A6E4;
         border-radius: 1.87em;
         box-shadow: 5px 10px 14px 0px #07ACE64A; }
+      .contactSection__consenting__text__returnToTopButton {
+        position: relative;
+        top: 4em;
+        left: 17em;
+        background: #08A6E4;
+        color: white;
+        border-radius: 50%;
+        padding-bottom: 2em;
+        padding-top: 2em;
+        font-family: 'Raleway';
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        cursor: pointer; }
 
 .footerBar {
   display: flex;
@@ -669,6 +682,8 @@ a {
     .contactSection__consenting {
       width: 40%;
       max-width: 31em; }
+      .contactSection__consenting__text__returnToTopButton {
+        left: 29em; }
     .contactSection__text__button {
       cursor: pointer; } }
 
