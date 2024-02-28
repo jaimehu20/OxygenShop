@@ -40,47 +40,53 @@
             font-size: 0.7em;
             letter-spacing: 0.20em;
             color: #08A6E4;
-            &__text {
-                display: block;
-            }
-            &__input {
-                border: 1px solid #95989A;
-                border-top: 0;
-                border-left: 0;
-                border-right: 0;
-                width: 90%;
-                margin-bottom: 1.87em;
-                padding-top: 1.25em;
+            &__form {
+                &__text {
+                    display: block;
+                    &__info {
+                        max-width: 20em;
+                    } 
+                }
+                &__input {
+                    border: 1px solid #95989A;
+                    border-top: 0;
+                    border-left: 0;
+                    border-right: 0;
+                    width: 90%;
+                    margin-bottom: 1.87em;
+                    padding-top: 1.25em;
+                }
+                &__info {
+                    display: inline-block;
+                    font-family: 'Open Sans';
+                    color: #707070;
+                    letter-spacing: 0;
+                }
+                &__checkbox {
+                    vertical-align: top;
+                    margin-right: 0.5em;
+                    margin-top: 0.3em;
+                    cursor: pointer;
+                    border: 1px solid black;
+                }
+                &__submitButton {
+                    background: #08A6E4;
+                    color: white;
+                    font-family: 'Open Sans';
+                    font-weight: bold;
+                    margin-left: 8em;
+                    margin-top: 1.87em;
+                    padding-bottom: 1.25em;
+                    padding-top: 1.25em;
+                    padding-right: 6em;
+                    padding-left: 6em;
+                    border: solid 1px #08A6E4;
+                    border-radius: 1.87em;
+                    box-shadow: 5px 10px 14px 0px #07ACE64A;
+                    cursor: pointer;
+                }
             }
         }
-        &__text {
-            max-width: 20em;
-            &__checkbox {
-                vertical-align: top;
-                margin-right: 0.5em;
-            }
-            &__form {
-                display: inline-block;
-                font-family: 'Open Sans';
-                font-weight: 400;
-                font-size: 0.75em;
-                color: #707070;
-            }
-            &__button {
-                background: #08A6E4;
-                color: white;
-                font-family: 'Open Sans';
-                font-weight: bold;
-                margin-left: 8em;
-                margin-top: 1.87em;
-                padding-bottom: 1.25em;
-                padding-top: 1.25em;
-                padding-right: 6em;
-                padding-left: 6em;
-                border: solid 1px #08A6E4;
-                border-radius: 1.87em;
-                box-shadow: 5px 10px 14px 0px #07ACE64A;
-            }
             &__returnToTopButton {
                 position: relative;
                 top: 4em;
@@ -97,4 +103,3 @@
             }
         }
     }
-}

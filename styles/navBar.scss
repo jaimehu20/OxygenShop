@@ -24,6 +24,9 @@
         width: 1.25em;
         padding-top: 0.62em;
         cursor: pointer;
+        &--disabled {
+            display: none;
+        }
     }
     &__iconClose {
         display: none;
@@ -33,10 +36,22 @@
         width: 1.25em;
         padding-top: 0.62em;
         cursor: pointer;
+        &--enabled {
+            display: block;
+        }
     }
     &__menu {
         display: none;
+        &--mobile {
+            display: block;
+            padding-bottom: 2em;
+        }
         &__options {
+            &--mobile {
+                display: block;
+                margin-left: 2em;
+                margin-top: 2em;
+            }
             display: none;
             padding-right: 8em;
             font-family: 'Open Sans';

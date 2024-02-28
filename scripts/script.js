@@ -3,31 +3,31 @@ const displayMenu = document.querySelector('#displayMenu');
 const hideMenu = document.querySelector('#hideMenu');
 const mobileMenu = document.querySelector('#mobileMenu');
 const menuOption = document.querySelectorAll('.navBar__menu__options');
-const returnTopButton = document.querySelector('#returnToTop');
+
 
 displayMenu.addEventListener("click", dropdownMenu);
 
 function dropdownMenu() {
-    displayMenu.style.display = "none";
-    hideMenu.style.display = "block";
-    hideMenu.style.right = "0.9em";
-    hideMenu.style.top = "0.9em";
-    mobileMenu.style.display = "block";
-    mobileMenu.style.paddingTop = "2em";
-    menuOption.forEach(element => {
-        element.style.display = "block";
-        element.style.paddingLeft = "2em";
-        element.style.paddingBottom = "1em";
-    });
+    displayMenu.classList.toggle('navBar__icon--disabled');
+    hideMenu.classList.toggle('navBar__iconClose--enabled');
+    mobileMenu.classList.toggle('navBar__menu--mobile');
+    menuOption.forEach((e) => {
+        e.classList.add('navBar__menu__options--mobile');
+    })
 }
 
+menuOption.forEach((e) => {
+    e.addEventListener("click", hideDropdownMenu);
+})
 hideMenu.addEventListener("click", hideDropdownMenu);
-mobileMenu.addEventListener("click", hideDropdownMenu);
 
 function hideDropdownMenu() {
-    displayMenu.style.display = "block";
-    hideMenu.style.display = "none";
-    mobileMenu.style.display = "none";
+    displayMenu.classList.remove('navBar__icon--disabled')
+    hideMenu.classList.remove('navBar__iconClose--enabled')
+    mobileMenu.classList.remove('navBar__menu--mobile');
+    menuOption.forEach((e) => {
+        e.classList.remove('navBar__menu__options--mobile');
+    })
 }
 
 // SCROLL-BAR
@@ -40,6 +40,8 @@ window.addEventListener("scroll", () => {
 })
 
 // RETURN TO TOP BUTTON
+const returnTopButton = document.querySelector('#returnToTop');
+
 returnTopButton.addEventListener("click", returnTop);
 
 function returnTop() {
@@ -47,3 +49,19 @@ function returnTop() {
         window.scrollTo(0, 0)
     }, 200)
 }
+
+
+// VALIDACIÓN DEL FORMULARIO
+const nombre = document.querySelector('#name');
+const email = document.querySelector('#email');
+
+let formOk = true;
+
+function formValidation() {
+    if (nombre.value.length > 2 && nombre.value.length < 101) {
+        return formOk = false;
+    } else {
+        console.log('El nombre introducido no es válido.');
+    }
+}
+/* /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ */

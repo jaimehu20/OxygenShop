@@ -430,41 +430,27 @@
             </div>                 
             <div class="contactSection__consenting">
                 <div class="contactSection__consenting__contactData">
-                    <label class="contactSection__consenting__contactData__text" for="name">
-                        NAME
-                    </label>
-                    <input class="contactSection__consenting__contactData__input" type="text" id="name">
-                    <label class="contactSection__consenting__contactData__text" for="email">
-                        EMAIL
-                    </label>
-                    <input class="contactSection__consenting__contactData__input" type="email" id="email">
-                </div>
-                <div class="contactSection__consenting__text">
-                    <div>
-                        <svg class="contactSection__consenting__text__checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="24" height="24" fill="white"/>
-                            <rect x="0.5" y="0.5" width="23" height="23" rx="3.5" stroke="#95989A"/>
-                            <g clip-path="url(#clip0_4_848)">
-                                <path d="M17.824 7.21992C17.776 7.15202 17.7124 7.09664 17.6385 7.05842C17.5646 7.0202 17.4827 7.00024 17.3995 7.00024C17.3164 7.00024 17.2344 7.0202 17.1605 7.05842C17.0867 7.09664 17.0231 7.15202 16.975 7.21992L13.475 11.5929L9.79002 16.1929L7.02402 12.7439C6.97599 12.676 6.91237 12.6206 6.8385 12.5824C6.76464 12.5442 6.68269 12.5242 6.59952 12.5242C6.51635 12.5242 6.4344 12.5442 6.36054 12.5824C6.28667 12.6206 6.22305 12.676 6.17502 12.7439C6.06099 12.8969 5.99939 13.0826 5.99939 13.2734C5.99939 13.4642 6.06099 13.6499 6.17502 13.8029L9.36202 17.7809C9.41005 17.8488 9.47367 17.9042 9.54754 17.9424C9.6214 17.9806 9.70335 18.0006 9.78652 18.0006C9.86969 18.0006 9.95164 17.9806 10.0255 17.9424C10.0994 17.9042 10.163 17.8488 10.211 17.7809L17.824 8.28091C17.9385 8.12775 18.0004 7.94165 18.0004 7.75041C18.0004 7.55918 17.9385 7.37308 17.824 7.21992Z" fill="#08A6E4"/>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_4_848">
-                                    <rect width="12" height="11" fill="white" transform="translate(6 7)"/>
-                                </clipPath>
-                            </defs>
-                            </svg>
-                        <label for="consent" class="contactSection__consenting__text__form">   
+                    <form class="contactSection__consenting__contactData__form">
+                        <label for="name" class="contactSection__consenting__contactData__form__text">
+                            NAME
+                        </label>
+                        <input type="text" id="name" name="name" class="contactSection__consenting__contactData__form__input">
+                        <label for="email" class="contactSection__consenting__contactData__form__text">
+                            EMAIL
+                        </label>
+                        <input type="email" id="email" name="email" class="contactSection__consenting__contactData__form__input"><br>
+                        <input class="contactSection__consenting__contactData__form__checkbox" type="checkbox">
+                        <label class="contactSection__consenting__contactData__form__info">   
                             I hereby give consent for my personal data<br/>included in my application to be processed for<br/>the purposes of the recruitment process under<br/>the European Parliament’s and Council of the<br/>European Union Regulation on the Protection of<br/>Natural Persons as of 27 April 2016, with regard<br/>to the processing of personal data and on the<br/>free movement of such data, and repealing<br/>Directive 95/46/EC (Data Protection Directive)
                         </label>
-                        <button class="contactSection__consenting__text__button">
-                            Send
-                        </button>
-                    </div>
-                <button class="contactSection__consenting__text__returnToTopButton" id="returnToTop">
-                    <strong>
-                        Return to top
-                    </strong>
+                        <input type="submit" class="contactSection__consenting__contactData__form__submitButton">
+                    </form>
+                <button class="contactSection__consenting__returnToTopButton" id="returnToTop">
+                        <strong>
+                            Return to top
+                        </strong>
                 </button>
+                </div>
             </div>
         </section>
         <footer class="footerBar">

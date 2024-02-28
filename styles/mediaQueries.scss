@@ -16,8 +16,17 @@
     }
     &__menu {
         display: flex;
+        &--mobile {
+            display: flex;
+            padding-bottom: 0;
+        }
         &__options {
             display: block;
+            &--mobile {
+                display: flex;
+                margin-left: 0;
+                margin-top: 0;
+            }
         }
         &__options:hover {
             z-index: 3;
