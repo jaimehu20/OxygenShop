@@ -48,6 +48,12 @@
                     } 
                 }
                 &__input {
+                    &--error {
+                        border: 1px solid red;
+                        border-top: 0;
+                        border-left: 0;
+                        border-right: 0;
+                    }
                     border: 1px solid #95989A;
                     border-top: 0;
                     border-left: 0;
@@ -63,6 +69,9 @@
                     letter-spacing: 0;
                 }
                 &__checkbox {
+                    &--error {
+                        border: 1px solid red;
+                    }
                     vertical-align: top;
                     margin-right: 0.5em;
                     margin-top: 0.3em;

@@ -416,6 +416,11 @@ a {
         width: 90%;
         margin-bottom: 1.87em;
         padding-top: 1.25em; }
+        .contactSection__consenting__contactData__form__input--error {
+          border: 1px solid red;
+          border-top: 0;
+          border-left: 0;
+          border-right: 0; }
       .contactSection__consenting__contactData__form__info {
         display: inline-block;
         font-family: 'Open Sans';
@@ -427,6 +432,8 @@ a {
         margin-top: 0.3em;
         cursor: pointer;
         border: 1px solid black; }
+        .contactSection__consenting__contactData__form__checkbox--error {
+          border: 1px solid red; }
       .contactSection__consenting__contactData__form__submitButton {
         background: #08A6E4;
         color: white;

@@ -52,16 +52,62 @@ function returnTop() {
 
 
 // VALIDACIÓN DEL FORMULARIO
-const nombre = document.querySelector('#name');
-const email = document.querySelector('#email');
+const myForm = document.querySelector('#form');
+const nombre = document.getElementById('nombre');
+const email = document.getElementById('email');
+const checkbox = document.getElementById('formCheck');
+const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-let formOk = true;
-
-function formValidation() {
-    if (nombre.value.length > 2 && nombre.value.length < 101) {
-        return formOk = false;
+nombre.addEventListener("input", () => {
+    if (nombre.value.length < 2 || nombre.value.length > 100) {
+        nombre.classList.add("contactSection__consenting__contactData__form__input--error");
+        alert("El nombre introducido no es válido.")
     } else {
-        console.log('El nombre introducido no es válido.');
+        nombre.classList.remove('contactSection__consenting__contactData__form__input--error');
+    }
+})
+
+checkbox.addEventListener("input", () => {
+    if (checkbox.checked) {
+        checkbox.classList.add('contactSection__consenting__contactData__form__checkbox--error');
+    } else {
+        checkbox.classList.remove('contactSection__consenting__contactData__form__checkbox--error');
+    }
+})
+
+function validateEmail(userMail, tester) {
+    if (tester.test(userMail.value)) {
+        return userMail.value;
+    } else {
+        userMail.classList.add('contactSection__consenting__contactData__form__input--error');
     }
 }
-/* /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ */
+
+email.addEventListener("input", () => {
+    validateEmail(email, regex);
+})
+
+form.addEventListener("submit", (event) => {
+    const checkBoxOk = checkbox.checked;
+    const nombreOk = nombre.value.length >= 2 && nombre.value.length <= 100;
+    const emailOk = regex.test(email.value);
+    event.preventDefault()
+
+    if (!checkBoxOk) {
+        checkbox.classList.add('contactSection__consenting__contactData__form__checkbox--error');
+    }
+
+    if (!nombreOk) {
+        nombre.classList.add("contactSection__consenting__contactData__form__input--error");
+    }
+
+    if (!emailOk) {
+        userMail.classList.add('contactSection__consenting__contactData__form__input--error');
+    }
+
+// SEGUIR POR AQUI MAÑANA
+})
+
+document.addEventListener("DOMContentLoaded", function() {
+    myForm.reset()
+});
