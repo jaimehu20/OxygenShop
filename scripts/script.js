@@ -61,7 +61,7 @@ const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\
 nombre.addEventListener("input", () => {
     if (nombre.value.length < 2 || nombre.value.length > 100) {
         nombre.classList.add("contactSection__consenting__contactData__form__input--error");
-        alert("El nombre introducido no es válido.")
+        
     } else {
         nombre.classList.remove('contactSection__consenting__contactData__form__input--error');
     }
@@ -80,6 +80,7 @@ function validateEmail(userMail, tester) {
         return userMail.value;
     } else {
         userMail.classList.add('contactSection__consenting__contactData__form__input--error');
+        
     }
 }
 
@@ -99,10 +100,12 @@ form.addEventListener("submit", (event) => {
 
     if (!nombreOk) {
         nombre.classList.add("contactSection__consenting__contactData__form__input--error");
+        alert("El nombre introducido no es válido.")
     }
 
     if (!emailOk) {
         userMail.classList.add('contactSection__consenting__contactData__form__input--error');
+        alert("El email introducido no es correcto.");
     }
 
 // SEGUIR POR AQUI MAÑANA
@@ -111,3 +114,26 @@ form.addEventListener("submit", (event) => {
 document.addEventListener("DOMContentLoaded", function() {
     myForm.reset()
 });
+
+
+// POPUP NEWSLETTER
+const popUpBox = document.getElementById('popUpBox');
+const closeIcon = document.getElementById('popUpCloseIcon');
+
+function showPopUp() {
+    setTimeout((e) => {
+        popUpBox.classList.add('openingSection__popUp--enabled');
+    }, 5000);
+}
+showPopUp();
+
+function hidePopUp() {
+    popUpBox.classList.remove('openingSection__popUp--enabled');
+}
+closeIcon.addEventListener("click", hidePopUp);
+document.addEventListener("keydown", press => {
+    if (press.key === "Escape") {
+        hidePopUp();
+    }
+})
+

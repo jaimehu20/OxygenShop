@@ -98,6 +98,56 @@ a {
     padding-top: 2em;
     padding-bottom: 2em;
     transform: scale(1.6); }
+  .openingSection__popUp {
+    display: none;
+    position: fixed;
+    top: 6em;
+    right: 0;
+    left: 0;
+    margin: auto;
+    max-width: 12em;
+    background: #08A6E4;
+    z-index: 9999;
+    border-radius: 1em; }
+    .openingSection__popUp--enabled {
+      display: block; }
+    .openingSection__popUp__title {
+      font-size: 0.8em;
+      color: white;
+      font-family: 'Open Sans';
+      font-weight: 400;
+      padding-bottom: 1em;
+      width: 85%;
+      margin: auto; }
+    .openingSection__popUp__closeIcon {
+      position: absolute;
+      top: 6%;
+      right: 7%;
+      cursor: pointer; }
+    .openingSection__popUp__text {
+      font-size: 0.4em;
+      font-weight: 500;
+      color: white;
+      padding-left: 1.5em;
+      padding-right: 1.5em; }
+    .openingSection__popUp__mailInput {
+      border: 1px solid #08A6E4;
+      border-radius: 1em;
+      margin-bottom: 1em;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      font-weight: 700; }
+    .openingSection__popUp__submitInput {
+      display: block;
+      margin: auto;
+      margin-bottom: 1em;
+      padding: 0.5em;
+      border-radius: 1em;
+      border: 1px solid #08A6E4;
+      background: white;
+      color: #08A6E4;
+      cursor: pointer;
+      font-weight: 700; }
 
 .secondSection {
   text-align: center; }
@@ -427,6 +477,7 @@ a {
         color: #707070;
         letter-spacing: 0; }
       .contactSection__consenting__contactData__form__checkbox {
+        border: 1px solid red;
         vertical-align: top;
         margin-right: 0.5em;
         margin-top: 0.3em;
@@ -539,6 +590,23 @@ a {
     display: block;
     width: 100%;
     transform: none; }
+  .openingSection__popUp {
+    display: none;
+    margin-left: 7.26em;
+    margin-right: 0;
+    padding-top: 0.5em;
+    border-radius: 0.2em; }
+    .openingSection__popUp--enabled {
+      display: block; }
+    .openingSection__popUp__text {
+      padding-bottom: 1em; }
+    .openingSection__popUp__mailInput {
+      padding: 1em;
+      border-radius: 0.5em; }
+    .openingSection__popUp__submitInput {
+      display: inline;
+      padding: 1em;
+      border-radius: 0.5em; }
 
   /* SECOND SECTION */
   .secondSection {

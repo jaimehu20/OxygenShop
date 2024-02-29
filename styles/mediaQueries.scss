@@ -56,6 +56,28 @@
         width: 100%;
         transform: none;
     }
+    &__popUp {
+        display: none;
+        margin-left: 7.26em;
+        margin-right: 0;
+        padding-top: 0.5em;
+        border-radius: 0.2em;
+        &--enabled {
+            display: block;
+        }
+        &__text {
+            padding-bottom: 1em;
+        }
+        &__mailInput {
+            padding: 1em;
+            border-radius: 0.5em;
+        }
+        &__submitInput {
+            display: inline;
+            padding: 1em;
+            border-radius: 0.5em;
+        }
+    }
 }
 
 /* SECOND SECTION */
