@@ -102,8 +102,6 @@ a {
     display: none;
     position: fixed;
     top: 6em;
-    right: 0;
-    left: 0;
     margin: auto;
     max-width: 12em;
     background: #08A6E4;
@@ -477,14 +475,14 @@ a {
         color: #707070;
         letter-spacing: 0; }
       .contactSection__consenting__contactData__form__checkbox {
-        border: 1px solid red;
         vertical-align: top;
         margin-right: 0.5em;
         margin-top: 0.3em;
         cursor: pointer;
         border: 1px solid black; }
         .contactSection__consenting__contactData__form__checkbox--error {
-          border: 1px solid red; }
+          border: 0;
+          outline: 1px solid red; }
       .contactSection__consenting__contactData__form__submitButton {
         background: #08A6E4;
         color: white;

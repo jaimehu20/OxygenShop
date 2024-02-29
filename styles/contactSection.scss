@@ -69,9 +69,9 @@
                     letter-spacing: 0;
                 }
                 &__checkbox {
-                    border: 1px solid red;
                     &--error {
-                        border: 1px solid red;
+                        border: 0;
+                        outline: 1px solid red;
                     }
                     vertical-align: top;
                     margin-right: 0.5em;
