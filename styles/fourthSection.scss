@@ -1,13 +1,19 @@
 .fourthSection {
+    text-align: center;
     &__title {
         font-family: 'Raleway';
         font-weight: 400;
         font-size: 2.25em;
         text-align: center;
         margin-top: 1.66em;
+        padding-bottom: 0.5em;
     }
+    &__selector {
+        border-radius: 1em;
+    }   
     &__content {
         padding: 2.87em;
+        padding-top: 2.2em;
         &__box {
             border: 1px solid #FB3B64;
             border-radius: 1em;

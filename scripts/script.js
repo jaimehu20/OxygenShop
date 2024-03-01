@@ -103,13 +103,13 @@ myForm.addEventListener("submit", (event) => {
 
     if(nombreChecked && emailChecked && isChecked) {
         fetchUserInfo(nombre, email, checkbox)
-        form.reset()
+        myForm.reset()
     }
     event.preventDefault();
 })
 
 document.addEventListener("DOMContentLoaded", function() {
-    form.reset()
+    myForm.reset()
 });
 
 // ENVIO DE DATOS AL SERVIDOR JSON
@@ -130,66 +130,34 @@ async function fetchUserInfo(userName, userMail, userCheckbox) {
                   },
             })
         }
+        if (!userName && userMail) {
+            response = await fetch('https://jsonplaceholder.typicode.com/users', {
+                method: 'POST',
+                body: JSON.stringify({
+                    email: userMail.value,
+                }),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                  },
+            })
+        }
         if (!response.ok){
-            throw new error ('Server returned ' + response.status + ' status code.')
+            throw new Error ('Server returned ' + response.status + ' status code.')
         } else {
             const data = await response.json()
             if (data.nombre && data.email) {
                 alert("Information sent succesfully!");
             }
+            if (data.email && !data.nombre) {
+                alert("You joined the newsletter succesfully!");
+            }
+            
         }
     }
     catch (error) {
-        throw new error ('Something went wrong: ' + error.message);
+        alert('Something went wrong ' + error.message);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // POPUP NEWSLETTER
 const popUpBox = document.getElementById('popUpBox');
@@ -205,6 +173,7 @@ showPopUp();
 function hidePopUp() {
     popUpBox.classList.remove('openingSection__popUp--enabled');
 }
+
 closeIcon.addEventListener("click", hidePopUp);
 document.addEventListener("keydown", press => {
     if (press.key === "Escape") {
@@ -212,6 +181,77 @@ document.addEventListener("keydown", press => {
     }
 })
 
-const scrollPercent = document.getElementById('scrollBar');
+const popUpEmail = document.getElementById('popUpEmail');
+const myFormNewsletter = document.getElementById('popUpForm');
 
-console.log()
+let popUpEmailOk = false;
+popUpEmail.addEventListener("input", () => {
+    if (!regex.test(popUpEmail.value)) {
+        popUpEmail.classList.add('openingSection__popUp__mailInput--error');
+    } else {
+        popUpEmail.classList.remove('openingSection__popUp__mailInput--error');
+        popUpEmailOk = true;
+    }
+})
+
+myFormNewsletter.addEventListener("submit", (event) => {
+    if (!popUpEmailOk) {
+        popUpEmail.classList.add('openingSection__popUp__mailInput--error');
+    } else {
+        popUpEmail.classList.remove('openingSection__popUp__mailInput--error');
+        fetchUserInfo(null, popUpEmail, true);
+        popUpBox.classList.remove('openingSection__popUp--enabled');
+
+        myFormNewsletter.reset();
+    }
+    event.preventDefault()
+})
+
+
+
+// CONVERSOR DE MONEDAS
+const coinSelector = document.getElementById('coinSelector');
+const basic = document.getElementById('basicPrice');
+const professional = document.getElementById('professionalPrice');
+const premium = document.getElementById('premiumPrice');
+
+let defaultBasic = 0;
+let defaultProfessional = 25;
+let defaultPremium = 60;
+
+
+
+
+
+const parseData = (apiData) => {
+    const eur = apiData.usd.eur
+    const gbp = apiData.usd.gbp
+    coinSelector.addEventListener("input", () => {
+        if (coinSelector.value === "USD") {
+            basic.innerText = "$"+defaultBasic;
+            professional.innerText = "$"+defaultProfessional;
+            premium.innerText = "$"+defaultPremium;
+        }
+        if (coinSelector.value === "GBP") {
+            basic.innerText = "£"+(defaultBasic*gbp);
+            professional.innerText = "£"+(Math.round(defaultProfessional*gbp));
+            premium.innerText = "£"+(Math.round(defaultPremium*gbp));
+        }
+        if (coinSelector.value === "EUR") {
+            basic.innerText = "€"+(Math.round(defaultBasic*eur));
+            professional.innerText = "€"+(Math.round(defaultProfessional*eur));
+            premium.innerText = "€"+(Math.round(defaultPremium*eur));
+        }
+    })
+}
+
+fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json').then((apiResponse => {
+    if (apiResponse.ok) {
+        apiResponse.json().then((jsonData) => {
+            parseData(jsonData);
+        })
+    } else {
+        alert("Peticion erronea")
+    }
+}))
+

@@ -46,13 +46,14 @@
                     <svg id="popUpCloseIcon"class="openingSection__popUp__closeIcon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.49128 12.5013L12.4939 1.49872M12.4939 12.5013L1.49128 1.49872" stroke="#FFFFFF" stroke-width="2"/>
                     </svg>
-                    <h2 class="openingSection__popUp__title">Subscribe to our newsletter!</h2>
-                    
+                    <h2 class="openingSection__popUp__title">Subscribe to our newsletter!</h2> 
                     <p class="openingSection__popUp__text">
                         Enter your email below and you will be up to date with latests news!
                     </p>
-                    <input class="openingSection__popUp__mailInput"type="email" placeholder="example@example.com">
-                    <input class="openingSection__popUp__submitInput" type="submit" value="Try it!">
+                    <form id="popUpForm">
+                        <input id ="popUpEmail" class="openingSection__popUp__mailInput" type="email" placeholder="example@example.com">
+                        <input class="openingSection__popUp__submitInput" type="submit" value="Try it!">
+                    </form>
                 </div>
         </header>
         <section class="secondSection" id="why">
@@ -196,13 +197,18 @@
             <p class="fourthSection__title">
                 Pricing
             </p>
+            <select id="coinSelector" class="fourthSection__selector">
+                <option>USD</option>
+                <option>GBP</option>
+                <option>EUR</option>
+            </select>
             <div class="fourthSection__content">
                 <article class="fourthSection__content__box">
                     <div class="fourthSection__content__box__pricing">
                         <p class="fourthSection__content__box__pricing__plan">
                             Basic
                         </p>
-                        <p class="fourthSection__content__box__pricing__price">
+                        <p  id="basicPrice" class="fourthSection__content__box__pricing__price">
                             $0
                         </p>
                     </div>
@@ -266,7 +272,7 @@
                         <p class="fourthSection__content__box__pricing__plan">
                             Professional
                         </p>
-                        <p class="fourthSection__content__box__pricing__price fourthSection__content__box__pricing__price--2">
+                        <p id="professionalPrice" class="fourthSection__content__box__pricing__price fourthSection__content__box__pricing__price--2">
                             $25
                         </p>
                         <p class="fourthSection__content__box__pricing__offer">
@@ -335,7 +341,7 @@
                         <p class="fourthSection__content__box__pricing__plan">
                             Premium
                         </p>
-                        <p class="fourthSection__content__box__pricing__price fourthSection__content__box__pricing__price--3">
+                        <p id="premiumPrice" class="fourthSection__content__box__pricing__price fourthSection__content__box__pricing__price--3">
                             $60
                         </p>
                         <p class="fourthSection__content__box__pricing__offer">
