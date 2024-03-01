@@ -288,6 +288,37 @@
             }
         }
     }
+/* SLIDER SECTION */
+.slider {
+    max-width: 40em;
+    &__arrowContainer {
+        max-width: 40em;
+        &__image {
+            width: 6%;
+            max-width: 6%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* CONTACT SECTION */
 .contactSection {

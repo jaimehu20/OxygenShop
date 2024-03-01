@@ -1,0 +1,46 @@
+.slider {
+    width: 80%;
+    background: white;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    border: 4px solid #08A6E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__image {
+        display: none;
+        width: 100%;
+        &--testing {
+            display: block;
+            width: 100%;
+        }
+    }
+    &__arrowContainer {
+        width: 80%;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__image {
+            width: 10%;
+            max-width: 10%;
+            cursor: pointer;
+        }
+    }
+    &__dot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        width: 100%;
+        transform: translateY(-88px);
+        &__button {
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            background: darkgray;
+            opacity: 0.3;
+        }
+    }
+}

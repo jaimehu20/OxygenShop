@@ -207,8 +207,6 @@ myFormNewsletter.addEventListener("submit", (event) => {
     event.preventDefault()
 })
 
-
-
 // CONVERSOR DE MONEDAS
 const coinSelector = document.getElementById('coinSelector');
 const basic = document.getElementById('basicPrice');
@@ -218,10 +216,6 @@ const premium = document.getElementById('premiumPrice');
 let defaultBasic = 0;
 let defaultProfessional = 25;
 let defaultPremium = 60;
-
-
-
-
 
 const parseData = (apiData) => {
     const eur = apiData.usd.eur
@@ -238,9 +232,9 @@ const parseData = (apiData) => {
             premium.innerText = "£"+(Math.round(defaultPremium*gbp));
         }
         if (coinSelector.value === "EUR") {
-            basic.innerText = "€"+(Math.round(defaultBasic*eur));
-            professional.innerText = "€"+(Math.round(defaultProfessional*eur));
-            premium.innerText = "€"+(Math.round(defaultPremium*eur));
+            basic.innerText = (Math.round(defaultBasic*eur)+"€");
+            professional.innerText = (Math.round(defaultProfessional*eur)+"€");
+            premium.innerText = (Math.round(defaultPremium*eur)+"€");
         }
     })
 }
@@ -255,3 +249,4 @@ fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currenci
     }
 }))
 
+// SLIDER
