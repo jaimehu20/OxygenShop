@@ -6,7 +6,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>Oxygen Shop</title>
-        <script src="scripts/script.js" defer></script>
+        <script src="scripts/mobileMenu.js" defer></script>
+        <script src="scripts/scrollBar.js" defer></script>
+        <script src="scripts/returnToTopButton.js" defer></script>
+        <script src="scripts/formValidation__&__popUp.js" defer></script>
+        <script src="scripts/coinConverter.js" defer></script>
+        <script src="scripts/slider.js" defer></script>
     </head>
     <body>
         <nav class="navBar">
@@ -42,19 +47,22 @@
                 <div>
                     <img class="openingSection__laptopDesktop" src="./images/Background.png">
                 </div>
-                <div id="popUpBox"class="openingSection__popUp">
-                    <svg id="popUpCloseIcon"class="openingSection__popUp__closeIcon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.49128 12.5013L12.4939 1.49872M12.4939 12.5013L1.49128 1.49872" stroke="#FFFFFF" stroke-width="2"/>
-                    </svg>
-                    <h2 class="openingSection__popUp__title">Subscribe to our newsletter!</h2> 
-                    <p class="openingSection__popUp__text">
-                        Enter your email below and you will be up to date with latests news!
-                    </p>
-                    <form id="popUpForm">
-                        <input id ="popUpEmail" class="openingSection__popUp__mailInput" type="email" placeholder="example@example.com">
-                        <input class="openingSection__popUp__submitInput" type="submit" value="Try it!">
-                    </form>
+                <div class="openingSection__popUpContainer">
+                    <div id="popUpBox"class="openingSection__popUp">
+                        <svg id="popUpCloseIcon"class="openingSection__popUp__closeIcon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.49128 12.5013L12.4939 1.49872M12.4939 12.5013L1.49128 1.49872" stroke="#FFFFFF" stroke-width="2"/>
+                        </svg>
+                        <h2 class="openingSection__popUp__title">Subscribe to our newsletter!</h2> 
+                        <p class="openingSection__popUp__text">
+                            Enter your email below and you will be up to date with latests news!
+                        </p>
+                        <form id="popUpForm">
+                            <input id ="popUpEmail" class="openingSection__popUp__mailInput" type="email" placeholder="example@example.com">
+                            <input class="openingSection__popUp__submitInput" type="submit" value="Try it!">
+                        </form>
+                    </div>
                 </div>
+                
         </header>
         <section class="secondSection" id="why">
                 <p class="secondSection__title">
@@ -410,12 +418,12 @@
             </div>
         </section>
         <div class="slider" id="slider">
-            <img src="./images/moon.jpg" class="slider__image slider__image--testing"/>
+            <img src="./images/moon.jpg" class="slider__image"/>
             <img src="./images/rocket.jpg" class="slider__image"/>
             <img src="./images/sky.jpg" class="slider__image"/>
-            <div class="slider__arrowContainer">
-                <img class="slider__arrowContainer__image" src="./images/leftArrow.png"/>
-                <img class="slider__arrowContainer__image" src="./images/rightArrow.png"/>
+            <div id="sliderControls" class="slider__arrowContainer">
+                <img class="slider__arrowContainer__prevImage" src="./images/leftArrow.png"/>
+                <img class="slider__arrowContainer__nextImage" src="./images/rightArrow.png"/>
             </div>
         </div>
         <div class="slider__dot">

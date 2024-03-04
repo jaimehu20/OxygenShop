@@ -1,56 +1,3 @@
-// MENU HAMBURGUESA
-const displayMenu = document.querySelector('#displayMenu');
-const hideMenu = document.querySelector('#hideMenu');
-const mobileMenu = document.querySelector('#mobileMenu');
-const menuOption = document.querySelectorAll('.navBar__menu__options');
-
-
-displayMenu.addEventListener("click", dropdownMenu);
-
-function dropdownMenu() {
-    displayMenu.classList.toggle('navBar__icon--disabled');
-    hideMenu.classList.toggle('navBar__iconClose--enabled');
-    mobileMenu.classList.toggle('navBar__menu--mobile');
-    menuOption.forEach((e) => {
-        e.classList.add('navBar__menu__options--mobile');
-    })
-}
-
-menuOption.forEach((e) => {
-    e.addEventListener("click", hideDropdownMenu);
-})
-hideMenu.addEventListener("click", hideDropdownMenu);
-
-function hideDropdownMenu() {
-    displayMenu.classList.remove('navBar__icon--disabled')
-    hideMenu.classList.remove('navBar__iconClose--enabled')
-    mobileMenu.classList.remove('navBar__menu--mobile');
-    menuOption.forEach((e) => {
-        e.classList.remove('navBar__menu__options--mobile');
-    })
-}
-
-// SCROLL-BAR
-window.addEventListener("scroll", () => {
-    let scrollIndex = window.scrollY;
-    windowHeight = document.body.scrollHeight - window.innerHeight;
-    let percent = (scrollIndex / windowHeight) * 100;
-    document.querySelector('#scrollBar').style.width = percent + "%";
-})
-
-// RETURN TO TOP BUTTON
-const returnTopButton = document.querySelector('#returnToTop');
-
-returnTopButton.addEventListener("click", returnTop);
-
-function returnTop() {
-    setTimeout(() => {
-        window.scrollTo(0, 0)
-    }, 200)
-}
-
-
-// VALIDACIÓN DEL FORMULARIO
 const myForm = document.querySelector('#form');
 const nombre = document.getElementById('nombre');
 const email = document.getElementById('email');
@@ -111,8 +58,6 @@ myForm.addEventListener("submit", (event) => {
 document.addEventListener("DOMContentLoaded", function() {
     myForm.reset()
 });
-
-// ENVIO DE DATOS AL SERVIDOR JSON
 
 async function fetchUserInfo(userName, userMail, userCheckbox) {
     try {
@@ -206,47 +151,3 @@ myFormNewsletter.addEventListener("submit", (event) => {
     }
     event.preventDefault()
 })
-
-// CONVERSOR DE MONEDAS
-const coinSelector = document.getElementById('coinSelector');
-const basic = document.getElementById('basicPrice');
-const professional = document.getElementById('professionalPrice');
-const premium = document.getElementById('premiumPrice');
-
-let defaultBasic = 0;
-let defaultProfessional = 25;
-let defaultPremium = 60;
-
-const parseData = (apiData) => {
-    const eur = apiData.usd.eur
-    const gbp = apiData.usd.gbp
-    coinSelector.addEventListener("input", () => {
-        if (coinSelector.value === "USD") {
-            basic.innerText = "$"+defaultBasic;
-            professional.innerText = "$"+defaultProfessional;
-            premium.innerText = "$"+defaultPremium;
-        }
-        if (coinSelector.value === "GBP") {
-            basic.innerText = "£"+(defaultBasic*gbp);
-            professional.innerText = "£"+(Math.round(defaultProfessional*gbp));
-            premium.innerText = "£"+(Math.round(defaultPremium*gbp));
-        }
-        if (coinSelector.value === "EUR") {
-            basic.innerText = (Math.round(defaultBasic*eur)+"€");
-            professional.innerText = (Math.round(defaultProfessional*eur)+"€");
-            premium.innerText = (Math.round(defaultPremium*eur)+"€");
-        }
-    })
-}
-
-fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json').then((apiResponse => {
-    if (apiResponse.ok) {
-        apiResponse.json().then((jsonData) => {
-            parseData(jsonData);
-        })
-    } else {
-        alert("Peticion erronea")
-    }
-}))
-
-// SLIDER
