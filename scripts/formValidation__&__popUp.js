@@ -108,15 +108,21 @@ async function fetchUserInfo(userName, userMail, userCheckbox) {
 const popUpBox = document.getElementById('popUpBox');
 const closeIcon = document.getElementById('popUpCloseIcon');
 
-function showPopUp() {
+export function showPopUp() {
     setTimeout((e) => {
-        popUpBox.classList.add('openingSection__popUp--enabled');
+            popUpBox.classList.add('openingSection__popUp--enabled');
     }, 5000);
 }
-showPopUp();
+
+window.onload = () => {
+    if (!localStorage.getItem('popUpClosed')){
+        showPopUp();
+    }
+}
 
 function hidePopUp() {
     popUpBox.classList.remove('openingSection__popUp--enabled');
+    localStorage.setItem('popUpClosed', 'true');
 }
 
 closeIcon.addEventListener("click", hidePopUp);
@@ -125,6 +131,7 @@ document.addEventListener("keydown", press => {
         hidePopUp();
     }
 })
+
 
 const popUpEmail = document.getElementById('popUpEmail');
 const myFormNewsletter = document.getElementById('popUpForm');
