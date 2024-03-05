@@ -108,11 +108,21 @@ async function fetchUserInfo(userName, userMail, userCheckbox) {
 const popUpBox = document.getElementById('popUpBox');
 const closeIcon = document.getElementById('popUpCloseIcon');
 
-export function showPopUp() {
+function showPopUp() {
     setTimeout((e) => {
             popUpBox.classList.add('openingSection__popUp--enabled');
     }, 5000);
 }
+
+window.addEventListener("scroll", () => {
+    let scrollIndex = window.scrollY;
+    windowHeight = document.body.scrollHeight - window.innerHeight;
+    let percent = (scrollIndex / windowHeight) * 100;
+    document.querySelector('#scrollBar').style.width = percent + "%";
+    if(percent > 25 && !localStorage.getItem('popUpClosed')){
+        popUpBox.classList.add('openingSection__popUp--enabled')
+    }
+})
 
 window.onload = () => {
     if (!localStorage.getItem('popUpClosed')){
