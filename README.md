@@ -22,4 +22,4 @@ FUNCIONALIDADES
 
 Si quieres acceder al proyecto, este es el enlace:
 
-💻https://jaimehu20.github.io/oxygen-shop/💻
+💻https://jaimehu20.github.io/oxygen-shop/    💻
