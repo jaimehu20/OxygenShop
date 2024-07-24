@@ -1,6 +1,6 @@
 ¡OXYGEN SHOP!
 
-Oxygen Shop es un proyecto basado en una landing de una tienda online ficticia.
+💼 Oxygen Shop es un proyecto basado en una landing de una tienda online ficticia.
 
 ![oxygenShop](https://github.com/user-attachments/assets/32e24d0c-7191-431b-b228-fb5eb0f7e29a)
 
