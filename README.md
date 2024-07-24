@@ -19,5 +19,3 @@ Las tecnologías utilizadas son:
   - Slider: Un carrousel de imágenes que va mostrando imágenes diferentes cada 5seg. También, cuenta con unos controles que nos permiten cambiar de imagen manualmente.
 
 Si quieres visitar la aplicación, este es su enlace: 💻 https://jaimehu20.github.io/OxygenShop/ 💻
-
-Si tienes alguna idea o sugerencia que crees que podría mejorar la aplicación, al final de la página podrás contactar conmigo. ¡No dudes en hacerlo!
